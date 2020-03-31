@@ -7,10 +7,9 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
-  background-color: #c6ecff;
+  background-color: ${props => props.theme.mainBrandColor};
 
   .hero-body {
-    font-weight: bold;
     position: relative;
     animation: mymove 2.5s;
     animation-direction: reverse;
@@ -22,11 +21,15 @@ const Container = styled.div`
 
   @keyframes mymove {
     from {
-      left: 100px;
+      left: 0px;
     }
     to {
       left: 800px;
     }
+  }
+  .title {
+    font-size: 6rem;
+    font-family: playfair display, serif;
   }
 `;
 
@@ -48,10 +51,12 @@ const IndexLayout = ({ hideHeader }) => (
               <img src="/images/hero_man.webp" alt="site logo" />
             </div>
             <div className="column">
-              <section className="hero is-large  is-bold">
+              <section className="hero is-medium  is-bold">
                 <div className="hero-body">
                   <div className="container">
-                    <h1 className="title is-size-1">Winter Collection</h1>
+                    <h1 className="title is-capitalized has-text-weight-bold">
+                      Winter Collection
+                    </h1>
                     <h2 className="subtitle">Primary bold subtitle</h2>
                   </div>
                 </div>

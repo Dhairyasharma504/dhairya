@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
 import { darken, lighten } from 'polished';
 
-const mainBrandColor = '#1f2022';
+const mainBrandColor = '#c6ecff';
 const lightShades = '#868c98';
-const darkAccent = '#373b41';
+const darkAccent = '#1f2022';
 const darkShades = '#2577FD';
 
 export const theme = {
@@ -34,7 +34,7 @@ export const theme = {
   fontSizeExtraSmall: 12,
   fontSizeMedium: 18,
   fontSizeLarge: 22,
-  textColor: darkShades, // '#0A0B11',
+  textColor: darkAccent, // '#0A0B11',
   textColorInverse: lightShades,
   textColorLite: '#8B8989',
   menuTintColor: darkAccent,

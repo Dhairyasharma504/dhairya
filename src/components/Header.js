@@ -95,7 +95,7 @@ export default class Header extends React.Component {
                   Home
                 </Link>
                 <Link to="/about" className="navbar-item">
-                  Catagori
+                  Category
                 </Link>
                 <Link to="/news" className="navbar-item">
                   Latest
@@ -120,7 +120,7 @@ export default class Header extends React.Component {
                   About
                 </Link>
                 <Link to="/news" className="navbar-item">
-                  maaaaa
+                  malaga
                 </Link>
                 <Link to="/contact" className="navbar-item">
                   mobile
