@@ -25,11 +25,11 @@ const IndexLayout = ({ hideHeader }) => (
         <section className="hero">
           <div className="hero-body">
             <div className="container">
-              <div class="columns">
-                <div class="column">
+              <div className="columns">
+                <div className="column">
                   <img src="/images/hero_man.webp" alt="site logo" />
                 </div>
-                <div class="column">Second column</div>
+                <div className="column">Second column</div>
               </div>
             </div>
           </div>
