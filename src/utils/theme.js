@@ -60,12 +60,23 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     line-height: 1.5rem;
+    font-family: playfair display, serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
   }
-  p, .title, .box {
+  .text{
+    font-family: yellowtail,cursive;
+    color: #2577fd;
+    font-size: 40px;
+    display: inline-block;
+  }
+   .title, .box {
     color: ${theme.textColor} !important;
+    font-family: playfair display, serif;
   }
   .subtitle {
-    color: ${lighten(0.06, theme.textColor)} !important;
+
   }
   .button.is-primary {
     background-color: ${theme.mainBrandColor};

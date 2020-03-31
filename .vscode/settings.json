@@ -112,5 +112,9 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "cSpell.words": [
+    "monospace",
+    "semibold"
+  ]
 }

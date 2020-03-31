@@ -28,8 +28,7 @@ const Container = styled.div`
     }
   }
   .title {
-    font-size: 6rem;
-    font-family: playfair display, serif;
+    font-size: 6.5rem;
   }
 `;
 
@@ -51,13 +50,18 @@ const IndexLayout = ({ hideHeader }) => (
               <img src="/images/hero_man.webp" alt="site logo" />
             </div>
             <div className="column">
-              <section className="hero is-medium  is-bold">
-                <div className="hero-body">
+              <section className="hero is-medium">
+                <div className="hero-body ">
                   <div className="container">
-                    <h1 className="title is-capitalized has-text-weight-bold">
+                    <h2 className="subtitle is-family-sans-serif  has-text-info  is-size-4 has-text-weight-semibold">
+                      60% Discount
+                    </h2>
+                    <h1 className="title is-capitalized has-text-weight-bold is-size-1-mobile">
                       Winter Collection
                     </h1>
-                    <h2 className="subtitle">Primary bold subtitle</h2>
+                    <p className="Paragraph">
+                      Best Clothes Collection For 2020 !
+                    </p>
                   </div>
                 </div>
               </section>
