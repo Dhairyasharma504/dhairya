@@ -7,10 +7,10 @@ import config from '../utils/config';
 import Header from './Header';
 
 const Container = styled.div`
-  min-height: 70vh;
+  background-color: #c6ecff;
 `;
 
-const IndexLayout = ({ children, hideHeader }) => (
+const IndexLayout = ({ hideHeader }) => (
   <ThemeProvider theme={theme}>
     <>
       <Helmet>
@@ -21,7 +21,20 @@ const IndexLayout = ({ children, hideHeader }) => (
       </Helmet>
       <GlobalStyle />
       {!hideHeader && <Header />}
-      <Container>{children}</Container>
+      <Container>
+        <section className="hero">
+          <div className="hero-body">
+            <div className="container">
+              <div class="columns">
+                <div class="column">
+                  <img src="/images/hero_man.webp" alt="site logo" />
+                </div>
+                <div class="column">Second column</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Container>
     </>
   </ThemeProvider>
 );

@@ -24,10 +24,11 @@ const Section = styled.section`
     }
   }
   .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-family: poppins, sans-serif;
+    line-height: 1.5;
+
     :hover {
-      color: ${props => props.theme.darkAccent};
+      color: red;
     }
   }
   .navbar-burger {
@@ -89,7 +90,29 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
+                <Link to="/" className="navbar-item">
+                  Home
+                </Link>
+                <Link to="/about" className="navbar-item">
+                  Catagori
+                </Link>
+                <Link to="/news" className="navbar-item">
+                  Latest
+                </Link>
+                <Link to="/contact" className="navbar-item">
+                  Blog
+                </Link>{' '}
+                <Link to="/contact" className="navbar-item">
+                  Pages
+                </Link>{' '}
+                <Link to="/contact" className="navbar-item">
+                  Contact
+                </Link>
+              </div>
+            </div>
+            <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>
